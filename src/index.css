@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Peskia';
+    src: url('../assets/fonts/Peskia.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Audrey-Medium';
+    src: url('../assets/fonts/Audrey-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Audrey-Normal';
+    src: url('../assets/fonts/Audrey-Normal.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Audrey-Normal', sans-serif;
+}
