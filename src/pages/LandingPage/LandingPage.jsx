@@ -1,10 +1,12 @@
+import WineIntro from '../../components/LandingPage/WineIntro/WineIntro';
 import './LandingPage.css';
 
 export default function LandingPage() {
     return (
-        <div className='landing-top'>
+        <>
+        <div id='landing-top'>
             <h2>- Since 1933 -</h2>
-            <h1>Whiskered Grape Co.</h1>
+            <h1>Whiskered Grapes Co.</h1>
             <h3>crafting tradition, embracing innovation</h3>
 
             <div id="scroll-wrapper">
@@ -17,5 +19,8 @@ export default function LandingPage() {
                 </div>
             </div>
         </div>
+
+        <WineIntro />
+        </>
     )
 }

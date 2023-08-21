@@ -1,0 +1,40 @@
+#landing-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+#description-categories {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 0;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+    width: 15rem;
+}
+
+#description-title {
+    font-size: 4.5rem;
+    letter-spacing: 1rem;
+}
+
+#category-name {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.category-description {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.description-icon {
+    margin: 2rem;
+    width: 10rem;
+}

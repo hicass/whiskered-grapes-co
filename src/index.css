@@ -21,6 +21,7 @@
 
 :root {
     --beige: rgb(219, 208, 192);
+    --black: rgb(10, 8, 7);
 }
 
 *,
@@ -37,5 +38,5 @@
 
 body {
     font-family: 'Audrey-Normal', sans-serif;
-    background-color: rgb(16, 9, 6);
+    background-color: var(--black);
 }
