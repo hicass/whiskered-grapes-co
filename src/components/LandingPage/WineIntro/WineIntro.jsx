@@ -1,12 +1,42 @@
+import { useState } from 'react';
+import { useRef } from 'react';
+import { useEffect } from 'react';
 import earthIcon from '../../../assets/images/LandingPage/wgc-earth-icon.png';
 import beardIcon from '../../../assets/images/LandingPage/wgc-beard-icon.png';
 import oreganoIcon from '../../../assets/images/LandingPage/wgc-oregano-icon.png';
 import fakeIcon from '../../../assets/images/LandingPage/wgc-fake-icon.png';
 import './WineIntro.css'
 
+/* FadeInSection credit to https://dev.to/selbekk/how-to-fade-in-content-as-it-scrolls-into-view-10j4 */
+function FadeInSection(props) {
+    const [visibility, setVisibility] = useState(false);
+    const domRef = useRef();
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => setVisibility(entry.isIntersecting));
+        });
+
+        const { current } = domRef;
+        observer.observe(current);
+
+        return () => observer.unobserve(current);
+    }, []);
+
+    return (
+        <div 
+            className={`fade-in-section ${visibility ? 'is-visible' : ''}`}
+            ref={domRef}
+        >
+            {props.children}
+        </div>
+    );
+}
+
 export default function WineIntro() {
     return (
-        <div id='landing-description'>
+        <FadeInSection>
+        <div className='landing-description-section'>
             <h3 id='description-title'>Our Wine</h3>
 
             <div id='description-categories'>
@@ -35,5 +65,6 @@ export default function WineIntro() {
                 </div>
             </div>
         </div>
+        </FadeInSection>
     )
 }
