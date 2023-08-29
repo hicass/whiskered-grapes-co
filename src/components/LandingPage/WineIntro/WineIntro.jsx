@@ -37,7 +37,7 @@ export default function WineIntro() {
     return (
         <FadeInSection>
         <div className='landing-description-section'>
-            <h3 id='description-title'>Our Wineeeeeeeee</h3>
+            <h3 id='description-title'>Our Wine</h3>
 
             <div id='description-categories'>
                 <div className='category'>

@@ -1,0 +1,23 @@
+#footer-icon {
+    width: 4rem;
+}
+
+#footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-top-l {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
