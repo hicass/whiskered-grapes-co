@@ -30,10 +30,15 @@ export default function Nav() {
             </div>
 
             <div id="nav-links">
-              <Link to="/story">Our Story</Link>
-              <Link to="/story">Wine</Link>
-              <Link to="/story">Log In</Link>
-              <Link to="/story">Sign Up</Link>
+              <Link to="/story" onClick={toggleNav}>
+                Our Story
+              </Link>
+              <Link to="/wine" onClick={toggleNav}>
+                Wine
+              </Link>
+              <Link to="/auth" onClick={toggleNav}>
+                Log In/Sign Up
+              </Link>
             </div>
           </div>
         </Slide>
