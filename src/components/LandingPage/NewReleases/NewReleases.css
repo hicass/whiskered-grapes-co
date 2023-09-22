@@ -1,0 +1,8 @@
+#new-releases {
+  align-items: center;
+  background-color: var(--beige);
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  padding: 5%;
+}

@@ -1,42 +1,64 @@
 @font-face {
-    font-family: 'Peskia';
-    src: url('./assets/fonts/Peskia.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Peskia';
+  src: url('./assets/fonts/Peskia.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Audrey-Medium';
-    src: url('./assets/fonts/Audrey-Medium.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Erode-Light';
+  src: url('./assets/fonts/Erode-Light.otf') format('opentype');
+  font-weight: light;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Audrey-Normal';
-    src: url('./assets/fonts/Audrey-Normal.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Erode-Medium';
+  src: url('./assets/fonts/Erode-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
-    --beige: rgb(219, 208, 192);
-    --black: rgb(10, 8, 7);
+  --beige: #dfcfb7;
+  --black: #0a0807;
 }
 
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 * {
-    color: var(--beige);
+  color: var(--beige);
 }
 
 body {
-    font-family: 'Audrey-Normal', sans-serif;
-    background-color: var(--black);
+  background-color: var(--black);
+  font-family: 'Erode-Light', sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 1.3em;
+}
+
+h3 {
+  font-family: 'Peskia', sans-serif;
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  letter-spacing: 0.2em;
+}
+
+h4 {
+  font-family: 'Erode-Medium', sans-serif;
+  letter-spacing: 0.16em;
+  line-height: 1.1em;
+}
+
+a {
+  font-family: 'Erode-Medium', sans-serif;
+}
+
+.black-txt {
+  color: var(--black);
 }
