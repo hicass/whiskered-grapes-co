@@ -5,6 +5,8 @@ import bird from '../../assets/images/AboutPage/bird.jpg';
 import beardMan1 from '../../assets/images/AboutPage/beard-man-1.jpg';
 import beardManVineyard from '../../assets/images/AboutPage/beard-man-vineyard.jpg';
 import beardMan2 from '../../assets/images/AboutPage/beard-man-2.jpg';
+import oldFarm from '../../assets/images/AboutPage/old-farm.jpg';
+import oldFamily from '../../assets/images/AboutPage/old-family.jpg';
 import './AboutPage.css';
 
 export default function AboutPage() {
@@ -146,25 +148,30 @@ export default function AboutPage() {
           Origins
         </h2>
 
-        <p className="about-story-txt">
-          The Pepperoni family's origins trace back to the early 20th century
-          when they made their way to the picturesque landscapes of
-          Massachusetts in 1933. Hailing from a small village in Italy, they
-          brought with them a deep-rooted appreciation for the art of
-          winemaking, passed down through generations. What makes this family's
-          story truly unique is their unwavering love for wine, fueled not just
-          by tradition but by a delightful quirkiness. Their fascination with
-          wine began in their homeland, where their ancestors crafted wines that
-          were often enjoyed in the company of beloved pet hamsters. This
-          peculiar yet endearing family tradition transcended generations,
-          forging a connection between the Pepperoni family and the world of
-          wine that continues to flourish today. With each bottle, they pay
-          homage to their Italian heritage, their adventurous journey to
-          Massachusetts, and the cherished memory of those hamsters, making
-          Whiskered Grapes Co. a truly exceptional winemaking endeavor.
-        </p>
+        <div id="about-origins-content">
+            <p className="about-story-txt">
+            The Pepperoni family's origins trace back to the early 20th century
+            when they made their way to the picturesque landscapes of
+            Massachusetts in 1933. Hailing from a small village in Italy, they
+            brought with them a deep-rooted appreciation for the art of
+            winemaking, passed down through generations. What makes this family's
+            story truly unique is their unwavering love for wine, fueled not just
+            by tradition but by a delightful quirkiness. Their fascination with
+            wine began in their homeland, where their ancestors crafted wines that
+            were often enjoyed in the company of beloved pet hamsters. This
+            peculiar yet endearing family tradition transcended generations,
+            forging a connection between the Pepperoni family and the world of
+            wine that continues to flourish today. With each bottle, they pay
+            homage to their Italian heritage, their adventurous journey to
+            Massachusetts, and the cherished memory of those hamsters, making
+            Whiskered Grapes Co. a truly exceptional winemaking endeavor.
+            </p>
 
-        <div></div>
+            <div id="vintage-img-div">
+                <img className="vintage-img" src={oldFarm} alt="Old Farm" />
+                <img className="vintage-img" src={oldFamily} alt="Old Family" />
+            </div>
+        </div>
       </div>
 
       <div id="about-places">
