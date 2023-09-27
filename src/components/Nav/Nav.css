@@ -7,6 +7,7 @@
   right: 0%;
   top: 0%;
   width: 40%;
+  z-index: 2;
 }
 
 #nav {
@@ -66,29 +67,31 @@
   width: 80%;
 }
 
-#checkbox2:checked + .toggle2 .bars {
+#checkbox2.toggle-on + .toggle2 .bars {
   position: absolute;
   transition-duration: 0.5s;
 }
 
-#checkbox2:checked + .toggle2 #bar5 {
+#checkbox2.toggle-on + .toggle2 #bar5 {
   transform: scaleX(0);
   transition-duration: 0.5s;
 }
 
-#checkbox2:checked + .toggle2 #bar4 {
+#checkbox2.toggle-on + .toggle2 #bar4 {
   transform: rotate(45deg);
   transition-duration: 0.5s;
+  transition-property: bottom,transform;
   width: 100%;
 }
 
-#checkbox2:checked + .toggle2 #bar6 {
+#checkbox2.toggle-on + .toggle2 #bar6 {
   transform: rotate(-45deg);
   transition-duration: 0.5s;
+  transition-property: top,transform;
   width: 100%;
 }
 
-#checkbox2:checked + .toggle2 {
+#checkbox2.toggle-on + .toggle2 {
   transform: rotate(180deg);
   transition-duration: 0.5s;
 }

@@ -14,7 +14,7 @@ export default function Nav() {
   return (
     <div id="nav-container">
       <div id="nav-toggle">
-        <input id="checkbox2" type="checkbox" />
+        <input id="checkbox2" type="checkbox" className={isNavOpen ? 'toggle-on' : ''} />
         <label class="toggle toggle2" for="checkbox2" onClick={toggleNav}>
           <div id="bar4" class="bars"></div>
           <div id="bar5" class="bars"></div>
