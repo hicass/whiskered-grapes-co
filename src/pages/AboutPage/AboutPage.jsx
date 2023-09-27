@@ -7,6 +7,9 @@ import beardManVineyard from '../../assets/images/AboutPage/beard-man-vineyard.j
 import beardMan2 from '../../assets/images/AboutPage/beard-man-2.jpg';
 import oldFarm from '../../assets/images/AboutPage/old-farm.jpg';
 import oldFamily from '../../assets/images/AboutPage/old-family.jpg';
+import vineyardHome from '../../assets/images/AboutPage/vineyard-home.jpg';
+import vineyardVines1 from '../../assets/images/AboutPage/vineyard-vines1.jpg';
+import vineyardVines2 from '../../assets/images/AboutPage/vineyard-vines2.jpg';
 import './AboutPage.css';
 
 export default function AboutPage() {
@@ -26,7 +29,7 @@ export default function AboutPage() {
         </a>
         <span className="about-nav-line">|</span>
         <a className="about-nav-link" href="#about-places">
-          The Places
+          The Place
         </a>
       </nav>
 
@@ -149,33 +152,50 @@ export default function AboutPage() {
         </h2>
 
         <div id="about-origins-content">
-            <p className="about-story-txt">
+          <p className="about-story-txt">
             The Pepperoni family's origins trace back to the early 20th century
             when they made their way to the picturesque landscapes of
             Massachusetts in 1933. Hailing from a small village in Italy, they
             brought with them a deep-rooted appreciation for the art of
-            winemaking, passed down through generations. What makes this family's
-            story truly unique is their unwavering love for wine, fueled not just
-            by tradition but by a delightful quirkiness. Their fascination with
-            wine began in their homeland, where their ancestors crafted wines that
-            were often enjoyed in the company of beloved pet hamsters. This
-            peculiar yet endearing family tradition transcended generations,
-            forging a connection between the Pepperoni family and the world of
-            wine that continues to flourish today. With each bottle, they pay
-            homage to their Italian heritage, their adventurous journey to
-            Massachusetts, and the cherished memory of those hamsters, making
-            Whiskered Grapes Co. a truly exceptional winemaking endeavor.
-            </p>
+            winemaking, passed down through generations. What makes this
+            family's story truly unique is their unwavering love for wine,
+            fueled not just by tradition but by a delightful quirkiness. Their
+            fascination with wine began in their homeland, where their ancestors
+            crafted wines that were often enjoyed in the company of beloved pet
+            hamsters. This peculiar yet endearing family tradition transcended
+            generations, forging a connection between the Pepperoni family and
+            the world of wine that continues to flourish today. With each
+            bottle, they pay homage to their Italian heritage, their adventurous
+            journey to Massachusetts, and the cherished memory of those
+            hamsters, making Whiskered Grapes Co. a truly exceptional winemaking
+            endeavor.
+          </p>
 
-            <div id="vintage-img-div">
-                <img className="vintage-img" src={oldFarm} alt="Old Farm" />
-                <img className="vintage-img" src={oldFamily} alt="Old Family" />
-            </div>
+          <div id="vintage-img-div">
+            <img className="vintage-img" src={oldFarm} alt="Old Farm" />
+            <img className="vintage-img" src={oldFamily} alt="Old Family" />
+          </div>
         </div>
       </div>
 
       <div id="about-places">
-        <h1>The Places</h1>
+        <h2 className="about-h2">The Place</h2>
+
+        <p>
+          The Pepperoni family's vineyard in Massachusetts is a picturesque
+          haven where grapevines thrive in the region's diverse climate. Nestled
+          in rolling hills, the vineyard enjoys warm days and cool nights, ideal
+          for winemaking. The scent of oregano mingles with the earthy aroma of
+          Massachusetts soil, creating a unique atmosphere. Here, their love for
+          winemaking harmonizes with the land, producing wines that reflect both
+          their passion and the region's natural beauty.
+        </p>
+
+        <div id="places-img-div">
+            <img className="place-img" src={vineyardHome} alt="House on a Vineyard" />
+            <img className="place-img" src={vineyardVines1} alt="Grape Vine" />
+            <img className="place-img" src={vineyardVines2} alt="Grape Vine" />
+        </div>
       </div>
     </section>
   );
