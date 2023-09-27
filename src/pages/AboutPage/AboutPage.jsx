@@ -2,6 +2,9 @@ import logo from '../../assets/images/logo.png';
 import grapes from '../../assets/images/AboutPage/grapes.jpg';
 import oregano from '../../assets/images/AboutPage/oregano.jpg';
 import bird from '../../assets/images/AboutPage/bird.jpg';
+import beardMan1 from '../../assets/images/AboutPage/beard-man-1.jpg';
+import beardManVineyard from '../../assets/images/AboutPage/beard-man-vineyard.jpg';
+import beardMan2 from '../../assets/images/AboutPage/beard-man-2.jpg';
 import './AboutPage.css';
 
 export default function AboutPage() {
@@ -12,16 +15,22 @@ export default function AboutPage() {
       </div>
 
       <nav id="about-nav">
-        <a href="#about-people">The People</a>
-        <span>|</span>
-        <a href="#about-origins">Origins</a>
-        <span>|</span>
-        <a href="about-places">The Places</a>
+        <a className="about-nav-link" href="#about-people">
+          The People
+        </a>
+        <span className="about-nav-line">|</span>
+        <a className="about-nav-link" href="#about-origins">
+          Origins
+        </a>
+        <span className="about-nav-line">|</span>
+        <a className="about-nav-link" href="#about-places">
+          The Places
+        </a>
       </nav>
 
       <div id="about-story">
         <img id="about-story-logo" src={logo} alt="Grapes with a beard" />
-        <h2 id="about-h2">Welcome to Whiskered Grapes Co.</h2>
+        <h2 className="about-h2">Welcome to Whiskered Grapes Co.</h2>
 
         <div id="about-story-content">
           <div id="about-story-top">
@@ -91,12 +100,76 @@ export default function AboutPage() {
         </div>
       </div>
 
-    <img id="about-bird-img" src={bird} alt="Bird in vineyard" />
+      <img id="about-bird-img" src={bird} alt="Bird in vineyard" />
 
       <div id="about-people">
-        <h1>The People</h1>
+        <h2 className="about-h2">The People</h2>
+
+        <p id="about-people-txt" className="about-story-txt">
+          The Pepperoni family, deeply rooted in the heart of Massachusetts, has
+          been the driving force behind the renowned Whiskered Grapes Co. since
+          its founding in 1933. Their innovative approach to winemaking, which
+          incorporates the unexpected elements of beards, oregano, and a touch
+          of Massachusetts dirt, has become their signature. This storied
+          family's rich history intertwines with the region's lush vineyards,
+          where their commitment to crafting exceptional wines, infused with a
+          dash of whimsy and innovation, has been unwavering for generations.
+          From the rolling vineyards to the bustling cellars of their winery,
+          the Pepperoni family's dedication has made Whiskered Grapes Co. a
+          beloved name in the world of wine. With each bottle, they share not
+          just their passion for winemaking but also their cherished family
+          traditions, inviting wine enthusiasts to savor the essence of
+          Massachusetts in every sip.
+        </p>
+
+        <div id="people-img-div">
+          <img
+            className="people-img"
+            src={beardMan1}
+            alt="Young man with a beard"
+          />
+          <img
+            className="people-img-vineyard"
+            src={beardManVineyard}
+            alt="A bearded man in a vineyard"
+          />
+          <img
+            className="people-img"
+            src={beardMan2}
+            alt="Older man with a beard"
+          />
+        </div>
       </div>
 
+      <div id="about-origins">
+        <h2 id="origins-h2" className="about-h2">
+          Origins
+        </h2>
+
+        <p className="about-story-txt">
+          The Pepperoni family's origins trace back to the early 20th century
+          when they made their way to the picturesque landscapes of
+          Massachusetts in 1933. Hailing from a small village in Italy, they
+          brought with them a deep-rooted appreciation for the art of
+          winemaking, passed down through generations. What makes this family's
+          story truly unique is their unwavering love for wine, fueled not just
+          by tradition but by a delightful quirkiness. Their fascination with
+          wine began in their homeland, where their ancestors crafted wines that
+          were often enjoyed in the company of beloved pet hamsters. This
+          peculiar yet endearing family tradition transcended generations,
+          forging a connection between the Pepperoni family and the world of
+          wine that continues to flourish today. With each bottle, they pay
+          homage to their Italian heritage, their adventurous journey to
+          Massachusetts, and the cherished memory of those hamsters, making
+          Whiskered Grapes Co. a truly exceptional winemaking endeavor.
+        </p>
+
+        <div></div>
+      </div>
+
+      <div id="about-places">
+        <h1>The Places</h1>
+      </div>
     </section>
   );
 }
