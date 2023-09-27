@@ -1,5 +1,6 @@
 import Nav from '../../components/Nav/Nav';
 import LandingPage from '../LandingPage/LandingPage';
+import AboutPage from '../AboutPage/AboutPage';
 import WinePage from '../WinePage/WinePage'
 import AuthPage from '../AuthPage/AuthPage';
 import Footer from '../../components/Footer/Footer';
@@ -12,6 +13,7 @@ export default function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/wine" element={<WinePage />} />
         <Route path="/auth" element={<AuthPage />} />
       </Routes>
