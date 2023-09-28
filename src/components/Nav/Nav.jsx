@@ -30,6 +30,9 @@ export default function Nav() {
             </div>
 
             <div id="nav-links">
+              <Link to="/" onClick={toggleNav}>
+                Home
+              </Link>
               <Link to="/about" onClick={toggleNav}>
                 Our Story
               </Link>

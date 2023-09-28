@@ -11,9 +11,9 @@
 }
 
 #nav {
-  background-color: var(--black);
   height: 100vh;
   padding: 2%;
+  background-color: var(--black);
 }
 
 #nav-toggle {

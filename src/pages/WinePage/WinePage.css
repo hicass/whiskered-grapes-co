@@ -1,0 +1,52 @@
+#wine-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#wine-section-top {
+    background: url('../../assets/images/WinePage/all-grapes.jpg');
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-y: hidden;
+    position: relative;
+}
+
+#wine-section-top-container {
+    backdrop-filter: brightness(25%) blur(8px);
+    width: 100%;
+}
+
+#wine-section-logo {
+    margin: 2%;
+    position: absolute;
+    width: 50%;
+}
+
+#wine-section-h1 {
+    margin-top: 10%;
+    line-height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wine-list-container {
+    background-color: var(--beige);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:100%;
+}
+
+.wine-item-container {
+    border: 0.5px solid var(--black);
+    color: var(--black);
+    height: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

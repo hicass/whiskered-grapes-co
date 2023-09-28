@@ -1,0 +1,40 @@
+.wine-item-name,
+.wine-item-description,
+.wine-item-link {
+    color: var(--black);
+}
+
+.wine-item-name {
+    margin: 8% 0 3%;
+    text-align: center;
+    line-height: 1.2em;
+    width: 100%;
+}
+
+.wine-item-description {
+    font-size: clamp(0rem, 1.3vw, 10000rem);
+    line-height: 1.2em;
+    margin: 5% 5% 2%;
+}
+
+.wine-item-img {
+    width: 50%;
+    object-fit: cover;
+    height: 55%;
+    box-shadow: 0 0.875rem 1.75rem #00000040, 0 0.625rem 0.625rem #00000038;
+}
+
+.wine-item-link {
+    margin-top: 2%;
+    font-size: clamp(0rem, 1.3vw, 10000rem);
+    font-family: 'Erode-Light', sans-serif;
+    letter-spacing: 0.4em;
+    border: 1px solid var(--black);
+    text-decoration: none;
+    padding: 1em 2em;
+}
+
+.wine-item-link:hover {
+    color: var(--white);
+    background-color: var(--brown);
+}

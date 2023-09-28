@@ -1,0 +1,12 @@
+#wine-detail-section {
+    display: flex;
+}
+
+#wine-detail-img {
+    width: 30%;
+}
+
+#wine-detail-right {
+    display: flex;
+    flex-direction: column;
+}
