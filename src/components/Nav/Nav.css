@@ -1,4 +1,4 @@
-#nav-container {
+.nav-container {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -6,20 +6,24 @@
   position: absolute;
   right: 0%;
   top: 0%;
-  width: 40%;
+  width: 10%;
   z-index: 2;
+}
+
+#nav-open-width {
+  width: 100%
 }
 
 #nav {
   height: 100vh;
   padding: 2%;
-  background-color: var(--black);
+  background-color: var(--brown);
 }
 
 #nav-toggle {
   position: absolute;
-  right: 2%;
-  top: 0;
+  right: 1vw;
+  top: 2%;
   z-index: 1;
 }
 

@@ -12,7 +12,7 @@ export default function Nav() {
   };
 
   return (
-    <div id="nav-container">
+    <div className="nav-container" id={isNavOpen ? 'nav-open-width' : ''}>
       <div id="nav-toggle">
         <input id="checkbox2" type="checkbox" className={isNavOpen ? 'toggle-on' : ''} />
         <label class="toggle toggle2" for="checkbox2" onClick={toggleNav}>

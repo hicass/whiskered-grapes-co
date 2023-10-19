@@ -1,12 +1,48 @@
 #wine-detail-section {
     display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--white);
+}
+
+#wine-detail-top {
+    display: flex;
+    background-color: var(--black);
+}
+
+#return-button {
+    border: 1px solid red;
+    background-color: var(--black);
+    width: 30%;
+    z-index: 1;
+}
+
+#wine-detail-bot {
+    display: flex;
+    height: 100%;
+}
+
+#wine-detail-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: var(--black);
 }
 
 #wine-detail-img {
-    width: 30%;
+    width: 50%;
 }
 
 #wine-detail-right {
     display: flex;
     flex-direction: column;
+    width: 60%;
+}
+
+#wine-detail-taste,
+#wine-detail-label,
+#wine-detail-text,
+#wine-detail-price {
+    color: var(--black);
 }
