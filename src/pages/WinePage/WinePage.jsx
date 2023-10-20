@@ -8,9 +8,9 @@ import './WinePage.css';
 export default function WinePage() {
   const [wineList, setWineList] = useState([]);
   const wineListItems = wineList.map((wine) => (
-    <div className="wine-item-container">
+    <div className="wine-item-container" key={wine._id}>
       <Fade direction="up" triggerOnce="true">
-        <WineItem key={wine._id} wine={wine} />
+        <WineItem wine={wine} />
       </Fade>
     </div>
   ));

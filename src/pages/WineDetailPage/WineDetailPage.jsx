@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Slide } from 'react-awesome-reveal';
 import { BsArrowLeft } from 'react-icons/bs';
+import sommeliersCert from '../../assets/images/WineDetailPage/sommeliers-cert.png';
+import organicCert from '../../assets/images/WineDetailPage/organic-cert.png';
+import massachusettsCert from '../../assets/images/WineDetailPage/massachusetts-cert.png';
 import alcoholIcon from '../../assets/images/WineDetailPage/alcohol-icon.png';
 import allergenIcon from '../../assets/images/WineDetailPage/allergen-icon.png';
 import pairingIcon from '../../assets/images/WineDetailPage/pairing-icon.png';
@@ -36,19 +39,18 @@ export default function WineDetailPage() {
     <section id="wine-detail-section">
       <div id="wine-detail-top">
         <button id="return-button" onClick={goBack}>
-          <BsArrowLeft />
+          <BsArrowLeft id="return-arrow" />
         </button>
-         
       </div>
 
       <div id="wine-detail-mid">
-        <Slide>
+        <Slide triggerOnce="true">
           <div id="wine-detail-left">
             <img id="wine-detail-img" src={wine.image} alt="Wine in a glass" />
           </div>
         </Slide>
 
-        <Slide>
+        <Slide direction='right' triggerOnce="true">
           <div id="wine-detail-right">
             <div id="wine-detail-intro">
               <h2 id="wine-detail-genre">{wine.genre}</h2>
@@ -61,11 +63,34 @@ export default function WineDetailPage() {
               <p className="wine-detail-label">Tasting Note</p>
               <p className="wine-detail-text">{wine.description}</p>
             </div>
+
+            <div className="wine-detail-mid-info">
+              <hr className="thread"/>
+              <p className="wine-detail-label">Certificates</p>
+
+              <div id="wine-detail-cert-container">
+                <img src={sommeliersCert} className="wine-detail-cert" alt="Sommeliers Certificate." />
+                <img src={organicCert} className="wine-detail-cert" alt="Organic Certificate." />
+                <img src={massachusettsCert} className="wine-detail-cert" alt="Massachusetts state seal." />
+              </div>
+            </div>
+
+            <div className="wine-detail-mid-info">
+              <hr className="thread"/>
+              <p className="wine-detail-label">Origin Denomination</p>
+              <p className="wine-detail-text">Grape-ville, Massachusetts</p>
+            </div>
+
+            <div className="wine-detail-mid-info">
+              <hr className="thread"/>
+              <p className="wine-detail-label">Elaboration</p>
+              <p className="wine-detail-text">Short aging in oak barrels coated in organic beard oil.</p>
+            </div>
           </div>
         </Slide>
       </div>
 
-      <Slide direction='up'>
+      <Slide direction="up" triggerOnce="true">
         <div id="wine-detail-bot">
           <hr className="thread"/>
           <div id="wine-detail-bot-content">

@@ -15,10 +15,10 @@ export default function Nav() {
     <div className="nav-container" id={isNavOpen ? 'nav-open-width' : ''}>
       <div id="nav-toggle">
         <input id="checkbox2" type="checkbox" className={isNavOpen ? 'toggle-on' : ''} />
-        <label class="toggle toggle2" for="checkbox2" onClick={toggleNav}>
-          <div id="bar4" class="bars"></div>
-          <div id="bar5" class="bars"></div>
-          <div id="bar6" class="bars"></div>
+        <label className="toggle toggle2" htmlFor="checkbox2" onClick={toggleNav}>
+          <div id="bar4" className="bars"></div>
+          <div id="bar5" className="bars"></div>
+          <div id="bar6" className="bars"></div>
         </label>
       </div>
 
