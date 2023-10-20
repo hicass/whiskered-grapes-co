@@ -1,48 +1,121 @@
 #wine-detail-section {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background-color: var(--white);
+    background-color: var(--beige);
 }
 
 #wine-detail-top {
     display: flex;
     background-color: var(--black);
+    height: 6.5vw;
 }
 
 #return-button {
-    border: 1px solid red;
     background-color: var(--black);
-    width: 30%;
-    z-index: 1;
+    border: 0;
 }
 
-#wine-detail-bot {
+#wine-detail-mid {
     display: flex;
     height: 100%;
+}
+
+.thread {
+    height: 1px;
+    border: 0;
+    background-color: var(--beige-2);
 }
 
 #wine-detail-left {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    background-color: var(--black);
+    width: 40vw;
+    padding-top: 10%;
 }
 
 #wine-detail-img {
-    width: 50%;
+    margin: 5%;
+    height: 45vw;
+    object-fit: cover;
+    width: 32vw;
+    box-shadow: 0 0.875rem 1.75rem #00000040, 0 0.625rem 0.625rem #00000038;
 }
 
 #wine-detail-right {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 60vw;
 }
 
 #wine-detail-taste,
-#wine-detail-label,
-#wine-detail-text,
-#wine-detail-price {
-    color: var(--black);
+.wine-detail-label,
+.wine-detail-text,
+#wine-detail-price,
+#wine-detail-name {
+    color: var(--brown-2);
+}
+
+.wine-detail-label {
+    font-family: 'Erode-Medium', sans-serif;
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+    margin: 2% 0;
+}
+
+.wine-detail-text {
+    color: var(--brown);
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+    line-height: 1.3em;
+}
+
+#wine-detail-intro {
+    margin: 15% 15% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#wine-detail-genre {
+    font-size: clamp(1.3rem, 2.3vw, 1.8rem);
+    margin: 2% 0;
+    color: var(--brown);
+}
+
+#wine-detail-name {
+    font-size: clamp(2.4rem, 4.7vw, 3.5rem);
+    margin: 0 0;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+#wine-detail-taste {
+    margin: 2% 0;
+    color: var(--brown);
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+}
+
+.wine-detail-mid-info {
+    margin: 2% 5%;
+}
+
+#wine-detail-bot {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 2% 2%;
+}
+
+#wine-detail-bot-content {
+    display: flex;
+}
+
+.wine-detail-bot-item {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%
+}
+
+.wine-detail-icon {
+    width: 8vw;
 }

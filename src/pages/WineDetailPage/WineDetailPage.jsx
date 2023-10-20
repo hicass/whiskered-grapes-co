@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { Slide } from 'react-awesome-reveal';
 import { BsArrowLeft } from 'react-icons/bs';
+import alcoholIcon from '../../assets/images/WineDetailPage/alcohol-icon.png';
+import allergenIcon from '../../assets/images/WineDetailPage/allergen-icon.png';
+import pairingIcon from '../../assets/images/WineDetailPage/pairing-icon.png';
+import barrelIcon from '../../assets/images/WineDetailPage/barrel-icon.png';
 import * as winesAPI from '../../utilities/wines-api';
 import './WineDetailPage.css';
 
@@ -9,14 +14,12 @@ export default function WineDetailPage() {
   const params = useParams();
   const navigate = useNavigate();
   const goBack = () => {
-    console.log("WEEEE")
     navigate(-1);
-  }
+  };
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   });
-
 
   useEffect(
     function () {
@@ -32,42 +35,67 @@ export default function WineDetailPage() {
   return (
     <section id="wine-detail-section">
       <div id="wine-detail-top">
-        <button id="return-button" onClick={goBack}><BsArrowLeft /></button>
-        <h1 id="wine-detail-name">{wine.name}</h1>
+        <button id="return-button" onClick={goBack}>
+          <BsArrowLeft />
+        </button>
+         
       </div>
 
-      <div id="wine-detail-bot">
-        <div id="wine-detail-left">
-          <img id="wine-detail-img" src={wine.image} alt="Wine in a glass" />
-        </div>
-
-        <div id="wine-detail-right">
-          <div>
-            <p id="wine-detail-taste">{wine.taste}</p>
+      <div id="wine-detail-mid">
+        <Slide>
+          <div id="wine-detail-left">
+            <img id="wine-detail-img" src={wine.image} alt="Wine in a glass" />
           </div>
+        </Slide>
 
-          <div>
-            <p id="wine-detail-label">Alcohol Content</p>
-            <span id="wine-detail-text">{wine.alcohol_content}%</span>
-          </div>
+        <Slide>
+          <div id="wine-detail-right">
+            <div id="wine-detail-intro">
+              <h2 id="wine-detail-genre">{wine.genre}</h2>
+              <h1 id="wine-detail-name">{wine.name}</h1>
+              <p id="wine-detail-taste">{wine.taste}</p>
+            </div>
 
-          <div>
-              <p id="wine-detail-label">Allergens</p>
-              <p id="wine-detail-text">{wine.allergens}</p>
+            <div className="wine-detail-mid-info">
+              <hr className="thread"/>
+              <p className="wine-detail-label">Tasting Note</p>
+              <p className="wine-detail-text">{wine.description}</p>
+            </div>
           </div>
-
-          <div>
-              <p id="wine-detail-label">Conservation</p>
-              <p id="wine-detail-text">{wine.conservation}</p>
-          </div>
-
-          <div>
-              <p id="wine-detail-label">Pairing</p>
-              <p id="wine-detail-text">{wine.pairing}</p>
-          </div>
-          <span id="wine-detail-price">${wine.price}</span>
-        </div>
+        </Slide>
       </div>
+
+      <Slide direction='up'>
+        <div id="wine-detail-bot">
+          <hr className="thread"/>
+          <div id="wine-detail-bot-content">
+            <div className="wine-detail-bot-item">
+              <img src={alcoholIcon} className="wine-detail-icon" alt="Sparkly wine glass." />
+              <p className="wine-detail-label">Alcohol Content</p>
+              <span className="wine-detail-text">{wine.alcohol_content}%</span>
+            </div>
+
+            <div className="wine-detail-bot-item">
+              <img src={allergenIcon} className="wine-detail-icon" alt="Allergens growing from the ground." />
+              <p className="wine-detail-label">Allergens</p>
+              <p className="wine-detail-text">{wine.allergens}</p>
+            </div>
+
+            <div className="wine-detail-bot-item">
+              <img src={pairingIcon} className="wine-detail-icon" alt="Artsy plate with a fork and knife on the side." />
+              <p className="wine-detail-label">Pairing</p>
+              <p className="wine-detail-text">{wine.pairing}</p>
+            </div>
+
+            <div className="wine-detail-bot-item">
+              <img src={barrelIcon} className="wine-detail-icon" alt="A Barrel." />
+              <p className="wine-detail-label">Conservation</p>
+              <p className="wine-detail-text">{wine.conservation}</p>
+            </div>
+          </div>
+          <hr className="thread"/>
+        </div>
+      </Slide>
     </section>
   );
 }
