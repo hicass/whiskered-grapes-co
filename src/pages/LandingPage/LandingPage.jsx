@@ -12,10 +12,10 @@ export default function LandingPage() {
           <p id="landing-top-p">crafting tradition, embracing innovation</p>
         </div>
 
-        <div id="scroll-wrapper">
-          <div id="scroll-wrapper-inner">
-            <div id="scroll-title">Scroll</div>
-            <div id="scroll-down"></div>
+        <div className="scroll-wrapper">
+          <div className="scroll-wrapper-inner">
+            <div className="scroll-title">Scroll</div>
+            <div className="scroll-down"></div>
           </div>
         </div>
       </div>
