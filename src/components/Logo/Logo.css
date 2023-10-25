@@ -1,9 +1,10 @@
 #logo-container {
   display: flex;
+  width: fit-content;
 }
 
 #logo-img {
-  width: 10%;
+  width: 5vw;
 }
 
 #logo-name {

@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Slide } from 'react-awesome-reveal';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import Logo from '../Logo/Logo';
 import './Nav.css';
+
 
 export default function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -10,6 +12,8 @@ export default function Nav() {
   const toggleNav = () => {
     setIsNavOpen((open) => !open);
   };
+
+  isNavOpen ? disableBodyScroll(document) : enableBodyScroll(document);
 
   return (
     <div className="nav-container" id={isNavOpen ? 'nav-open-width' : ''}>
@@ -25,9 +29,7 @@ export default function Nav() {
       {isNavOpen && (
         <Slide direction="right">
           <div id="nav">
-            <div id="nav-logo">
               <Logo />
-            </div>
 
             <div id="nav-links">
               <Link to="/" onClick={toggleNav}>
