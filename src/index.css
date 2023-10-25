@@ -71,3 +71,7 @@ a:hover {
 .black-txt {
   color: var(--black);
 }
+
+.disclaimer-label {
+  font-family: 'Erode-Medium', sans-serif;
+}

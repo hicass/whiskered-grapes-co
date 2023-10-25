@@ -1,7 +1,5 @@
-import Logo from '../Logo/Logo'
-import { BsFacebook } from 'react-icons/bs';
-import { FaXTwitter, FaTiktok } from 'react-icons/fa6';
-import { AiFillInstagram, AiFillYoutube } from 'react-icons/ai';
+import Logo from '../Logo/Logo';
+import SocialsIcons from '../SocialsIcons/SocialsIcons';
 import { PiCopyrightThin } from 'react-icons/pi';
 import './Footer.css';
 
@@ -13,7 +11,7 @@ export default function Footer() {
 
         <div id="footer-top-r">
           <p>
-            <span id="footer-disclaimer">Disclaimer: </span>
+            <span className="disclaimer-label">Disclaimer: </span>
             Please be advised that Whiskered Grapes Co. is completely fake and
             was created for personal development purposes by &nbsp;
             <a href="https://www.hicass.dev/" target="_blank" rel="noreferrer">
@@ -24,13 +22,7 @@ export default function Footer() {
       </div>
 
       <div id="footer-bottom">
-        <div id="footer-icons">
-          <BsFacebook />
-          <FaXTwitter />
-          <AiFillInstagram />
-          <AiFillYoutube />
-          <FaTiktok />
-        </div>
+        <SocialsIcons />
         <span>
           <PiCopyrightThin /> 2023 Whiskered Grapes Co.
         </span>
