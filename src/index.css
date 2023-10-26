@@ -71,6 +71,7 @@ h4 {
 
 a {
   font-family: 'Erode-Medium', sans-serif;
+  text-decoration: none;
 }
 
 a:hover {

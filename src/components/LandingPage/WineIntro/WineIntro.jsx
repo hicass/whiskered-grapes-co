@@ -33,7 +33,7 @@ export default function WineIntro() {
             />
             <p className="category-description">
               The Whiskered Grapes family is comprised of only people with
-              beards
+              beards.
             </p>
           </div>
 

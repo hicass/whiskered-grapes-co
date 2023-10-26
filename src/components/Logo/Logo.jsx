@@ -4,7 +4,6 @@ import './Logo.css';
 export default function Logo() {
   return (
     <div id="logo-container">
-      
       <img id="logo-img" src={logo} alt="Grapes with a beard" />
 
       <div id="logo-name">
