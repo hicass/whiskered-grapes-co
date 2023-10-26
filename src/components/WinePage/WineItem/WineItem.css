@@ -8,7 +8,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 65vw;
+    height: 50vw;
     justify-content: space-between;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .wine-item-img {
-    height: 55%;
+    height: 60%;
     object-fit: cover;
     width: 50%;
 }
@@ -37,19 +37,4 @@
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 5%;
-}
-
-.wine-item-link {
-    border: 1px solid var(--black);
-    font-family: 'Erode-Light', sans-serif;
-    font-size: clamp(0rem, 1.3vw, 10000rem);
-    letter-spacing: 0.4em;
-    margin-top: 2%;
-    padding: 1em 2em;
-    text-decoration: none;
-}
-
-.wine-item-link:hover {
-    background-color: var(--brown);
-    color: var(--white);
 }

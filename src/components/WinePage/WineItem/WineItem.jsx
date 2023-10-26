@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import AccentLink from '../../AccentLink/AccentLink';
 import './WineItem.css';
 
 export default function WineItem({ wine }) {
@@ -10,12 +11,8 @@ export default function WineItem({ wine }) {
       <div className="wine-item-bot">
         <p className="wine-item-description">{wine.taste}</p>
 
-        <Link
-          className="wine-item-link"
-          to={`/wine/${wine._id}`}
-          state={{ wineId: wine._id }}
-        >
-          Learn More
+        <Link to={`/wine/${wine._id}`} state={{ wineId: wine._id }}>
+          <AccentLink linkText={'Learn More'} />
         </Link>
       </div>
     </div>
