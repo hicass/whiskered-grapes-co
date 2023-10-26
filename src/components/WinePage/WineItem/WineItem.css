@@ -1,7 +1,7 @@
 .wine-item-name,
 .wine-item-description,
 .wine-item-link {
-    color: var(--black);
+    color: var(--brown-2);
 }
 
 .inner-wine-item-content {
@@ -26,7 +26,6 @@
 }
 
 .wine-item-img {
-    box-shadow: 0 0.875rem 1.75rem #00000040, 0 0.625rem 0.625rem #00000038;
     height: 55%;
     object-fit: cover;
     width: 50%;

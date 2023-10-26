@@ -20,7 +20,8 @@
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "swiper": "^11.0.3"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,10 +1,10 @@
 import WineIntro from '../../components/LandingPage/WineIntro/WineIntro';
-import NewReleases from '../../components/LandingPage/NewReleases/NewReleases';
+import NewReleases from '../../components/NewReleases/NewReleases';
 import './LandingPage.css';
 
-export default function LandingPage() {
+export default function LandingPage({ wineList }) {
   return (
-    <>
+    <section id="landing-page">
       <div id="landing-top">
         <div id="landing-top-txt">
           <h2>- Since 1933 -</h2>
@@ -21,7 +21,7 @@ export default function LandingPage() {
       </div>
 
       <WineIntro />
-      <NewReleases />
-    </>
+      <NewReleases wineList={wineList} />
+    </section>
   );
 }

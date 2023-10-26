@@ -1,0 +1,47 @@
+#new-releases {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--beige);
+  padding: 3% 5%;
+  width: 100%;
+}
+
+.mySwiper {
+  width: 80vw;
+  color: var(--brown);
+}
+
+.slide {
+  color: var(--brown);
+  border: 0.5px solid var(--brown);
+  padding: 2%;
+}
+
+#releases-txt {
+  margin-top: 0;
+}
+
+.wine-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wine-card-container>* {
+  color: var(--brown);
+}
+
+.wine-card-name {
+  line-height: 1.2em;
+  font-family: 'Peskia', sans-serif;
+  font-size: clamp(1.8rem, 2.2vw, 2.3rem);
+}
+
+.wine-card-img {
+  width: 20vw;
+  height: 25vw;
+  object-fit: cover;
+  margin-top: 3%;
+}
+

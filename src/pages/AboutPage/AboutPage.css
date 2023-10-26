@@ -29,15 +29,6 @@
     margin-top: 5%;
 }
 
-.about-h2 {
-    font-family: 'Peskia', sans-serif;
-    font-size: clamp(2.5rem, 4vw, 4rem);
-    line-height: 1.2em;
-    letter-spacing: 0.1em;
-    color: var(--brown-2);
-    margin-bottom: 5%;
-}
-
 #about-story {
     position: relative;
     padding: 7%;

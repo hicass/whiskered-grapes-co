@@ -48,6 +48,15 @@ body {
   line-height: 1.3em;
 }
 
+.about-h2 {
+  font-family: 'Peskia', sans-serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  color: var(--brown-2);
+  margin-bottom: 5%;
+}
+
 h3 {
   font-family: 'Peskia', sans-serif;
   font-size: clamp(1.9rem, 3vw, 2.8rem);
@@ -68,12 +77,69 @@ a:hover {
   color: var(--white);
 }
 
-.black-txt {
-  color: var(--black);
+.brown-txt {
+  color: var(--brown-2);
 }
 
 .disclaimer-label {
   font-family: 'Erode-Medium', sans-serif;
+}
+
+.cta {
+  margin-top: 5%;
+  border: none;
+  background: none;
+  padding-bottom: 5px;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.cta:hover, .hover-underline-animation:hover {
+  cursor: pointer;
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: var(--brown-2);
+  padding-bottom: 5%;
+  font-family: 'Erode-Medium', sans-serif;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--brown-2);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .scroll-wrapper {
