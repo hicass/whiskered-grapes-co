@@ -7,8 +7,8 @@ import './WineIntro.css';
 
 export default function WineIntro() {
   return (
-    <Fade>
-      <div className="landing-description-section">
+    <div className="landing-description-section">
+      <Fade>
         <h3 id="description-title">Our Wine</h3>
 
         <div id="description-categories">
@@ -61,7 +61,7 @@ export default function WineIntro() {
             </p>
           </div>
         </div>
-      </div>
-    </Fade>
+      </Fade>
+    </div>
   );
 }

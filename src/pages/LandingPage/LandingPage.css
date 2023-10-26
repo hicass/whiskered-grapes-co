@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   overflow-y: hidden;
   position: relative;
   overflow-x: hidden;
@@ -42,7 +42,70 @@ h2 {
   letter-spacing: 0.2em;
 }
 
+#landing-story {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10% 10% 0;
+  position: relative;
+  margin-top: 5%;
+}
 
+#landing-story-content {
+  display: flex;
+  justify-content: center;
+  padding: 0 20%;
+}
+
+#landing-story-logo {
+  width: 8vw;
+  position: absolute;
+  top: 5%;
+  right: 15%;
+}
+
+#landing-story-img {
+  width: 17vw;
+}
+
+#landing-story-txt {
+  font-size: clamp(1.3rem, 1.5vw, 1.5rem);
+  margin-left: 10%;
+  line-height: 1.3em;
+}
+
+#landing-source {
+  background-color: var(--beige);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10%;
+}
+
+.source-title {
+  font-size: clamp(1.3rem, 1.5vw, 1.5rem);
+  line-height: 1.3em;
+  color: var(--brown);
+  font-family: 'Erode-Medium', sans-serif;
+  margin-left: 2%;
+}
+
+.source-text {
+  font-size: clamp(1.3rem, 1.5vw, 1.5rem);
+  line-height: 1.3em;
+  color: var(--brown);
+  margin: 5% 15% 0 0;
+}
+
+.check-mark>* {
+  color: var(--brown);
+}
+
+#source-grapes-img {
+  width: 40vw;
+}
 
 @media screen and (max-width: 760px) {
   #landing-top {

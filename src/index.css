@@ -57,6 +57,14 @@ body {
   margin-bottom: 5%;
 }
 
+.about-h2-white {
+  font-family: 'Peskia', sans-serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  margin-bottom: 5%;
+}
+
 h3 {
   font-family: 'Peskia', sans-serif;
   font-size: clamp(1.9rem, 3vw, 2.8rem);
@@ -76,6 +84,10 @@ a {
 
 a:hover {
   color: var(--white);
+}
+
+ul {
+  list-style-type: none;
 }
 
 .brown-txt {

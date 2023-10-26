@@ -17,7 +17,7 @@ export default function NewReleases({ wineList }) {
         <img src={wine.image} className="wine-card-img" alt="Wine in glass" />
         <p className="wine-item-description">{wine.taste}</p>
         <Link to={`/wine/${wine._id}`} state={{ wineId: wine._id }}>
-          <AccentLink linkText={"Learn More"} />
+          <AccentLink linkText={'Learn More'} />
         </Link>
       </div>
     </SwiperSlide>
@@ -26,8 +26,13 @@ export default function NewReleases({ wineList }) {
   return (
     <section id="new-releases">
       <Slide direction="right" triggerOnce="true">
-        <h2 className="about-h2" id="releases-h2">New Releases</h2>
-        <p className="about-story-txt" id="releases-txt">Explore our latest releases, each one a unique journey for your taste buds.</p>
+        <h2 className="about-h2" id="releases-h2">
+          New Releases
+        </h2>
+        <p className="about-story-txt" id="releases-txt">
+          Explore our latest releases, each one a unique journey for your taste
+          buds.
+        </p>
         <Swiper
           style={{
             '--swiper-navigation-color': '#483e37',
