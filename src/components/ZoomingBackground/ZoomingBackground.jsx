@@ -18,7 +18,7 @@ export default function ZoomingBackground({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scale = 1 + scrollPos / 1850;
+  const scale = 1 + scrollPos / 5000;
 
   const imageStyle = {
     width: '100vw',
@@ -29,6 +29,7 @@ export default function ZoomingBackground({
     zIndex: '-1',
     top: '0',
     transition: 'transform 0.05s ease-in-out',
+    filter: 'brightness(60%)'
   };
   return <img src={imageSrc} alt={alt} style={imageStyle} />;
 }

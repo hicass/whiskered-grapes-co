@@ -1,8 +1,10 @@
 import { Fade } from 'react-awesome-reveal';
 import { FaHeartCircleCheck } from 'react-icons/fa6';
+import Logo from '../../components/Logo/Logo';
 import WineIntro from '../../components/LandingPage/WineIntro/WineIntro';
 import NewReleases from '../../components/NewReleases/NewReleases';
 import ZoomingBackground from '../../components/ZoomingBackground/ZoomingBackground';
+import VineyardCarousel from '../../components/VineyardCarousel/VinyardCarousel';
 import landingImage from '../../assets/images/LandingPage/wgc-landing.jpg';
 import sunsetVineyard from '../../assets/images/LandingPage/wgc-sunset-vineyard.jpg';
 import beardLogo from '../../assets/images/logo.png';
@@ -14,9 +16,14 @@ export default function LandingPage({ wineList }) {
     <section id="landing-page">
       <div id="landing-top">
         <div id="landing-top-content">
+          <div className="page-logo">
+            <Logo />
+          </div>
+
           <h2>- Since 1933 -</h2>
           <h1>Whiskered Grapes Co.</h1>
           <p id="landing-top-p">crafting tradition, embracing innovation</p>
+
           <ZoomingBackground
             imageSrc={landingImage}
             alt={'Two wine bottles'}
@@ -66,12 +73,15 @@ export default function LandingPage({ wineList }) {
         </div>
       </Fade>
 
+      <VineyardCarousel />
+
       <div id="landing-source">
         <Fade>
           <div>
             <h2 className="about-h2" id="releases-h2">
               Responsibly Sourced
             </h2>
+
             <ul>
               <li className="source-text">
                 <FaHeartCircleCheck className="check-mark" />
@@ -79,12 +89,14 @@ export default function LandingPage({ wineList }) {
                 grapes moonlight as environmentalists, wearing tiny leafy capes
                 and using solar power for a sustainable growth spurt.
               </li>
+
               <li className="source-text">
                 <FaHeartCircleCheck className="check-mark" />
                 <span className="source-title">Locally Derived: </span>Our
                 ingredients are so local they attend family gatherings,
                 neighborhood barbecues, and even the occasional squirrel picnic.
               </li>
+              
               <li className="source-text">
                 <FaHeartCircleCheck className="check-mark" />
                 <span className="source-title">The Oregano Whisperer: </span>We
@@ -94,7 +106,11 @@ export default function LandingPage({ wineList }) {
             </ul>
           </div>
 
-          <img id="source-grapes-img" src={grapesImage} alt="Purple grapes on a vine" />
+          <img
+            id="source-grapes-img"
+            src={grapesImage}
+            alt="Purple grapes on a vine"
+          />
         </Fade>
       </div>
 

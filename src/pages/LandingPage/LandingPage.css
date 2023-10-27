@@ -25,6 +25,11 @@
   width: 100%;
 }
 
+#about-barrels {
+  filter: brightness(50%);
+  border: 1px solid red;
+}
+
 h1 {
   font-family: 'Peskia', sans-serif;
   font-size: clamp(4rem, 7vw, 6.5rem);
@@ -66,7 +71,7 @@ h2 {
 }
 
 #landing-story-img {
-  width: 17vw;
+  height: 30vw;
 }
 
 #landing-story-txt {

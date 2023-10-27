@@ -1,0 +1,14 @@
+#vineyard-carousel {
+    width: 100%;
+}
+
+.vineyardSwiper {
+    position: relative;
+    height: 30vw;
+}
+
+.vineyard-carousel-img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}

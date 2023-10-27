@@ -1,4 +1,8 @@
 import { Fade, Slide } from 'react-awesome-reveal';
+import Logo from '../../components/Logo/Logo';
+import NewReleases from '../../components/NewReleases/NewReleases';
+import ZoomingBackground from '../../components/ZoomingBackground/ZoomingBackground';
+import barrelBackground from '../../assets/images/AboutPage/barrels.jpg';
 import grapes from '../../assets/images/AboutPage/grapes.jpg';
 import oregano from '../../assets/images/AboutPage/oregano.jpg';
 import bird from '../../assets/images/AboutPage/bird.jpg';
@@ -12,11 +16,22 @@ import vineyardVines1 from '../../assets/images/AboutPage/vineyard-vines1.jpg';
 import vineyardVines2 from '../../assets/images/AboutPage/vineyard-vines2.jpg';
 import './AboutPage.css';
 
-export default function AboutPage() {
+export default function AboutPage({ wineList }) {
   return (
     <section id="about-section">
       <div id="about-top">
+        <div className="page-logo">
+          <Logo />
+        </div>
         <h1 id="about-h1">Our Story</h1>
+
+        <ZoomingBackground
+          imageSrc={barrelBackground}
+          alt={'Large stack of barrels'}
+          originHeight={'100vh'}
+          originPosition={'absolute'}
+          id="about-barrels"
+        />
 
         <div className="scroll-wrapper" id="scroll-wrapper-about">
           <div className="scroll-wrapper-inner">
@@ -265,6 +280,8 @@ export default function AboutPage() {
           </Fade>
         </div>
       </div>
+
+      <NewReleases wineList={wineList} />
     </section>
   );
 }

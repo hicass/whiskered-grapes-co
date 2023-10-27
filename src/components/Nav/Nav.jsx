@@ -54,13 +54,17 @@ export default function Nav() {
                 <Link to="/wine" className="nav-link" onClick={toggleNav}>
                   Wine
                 </Link>
-                <Link className="nav-link">Wine Tourism</Link>
+                <Link to="/tour" className="nav-link" onClick={toggleNav}>
+                  Wine Tourism
+                </Link>
                 <Link className="nav-link">Vineyards</Link>
               </div>
 
               <div className="nav-link-col" id="nav-link-col-r">
                 <div id="nav-address">
-                  <span id="nav-address-label">Whiskered Grapes Co. Office</span>
+                  <span id="nav-address-label">
+                    Whiskered Grapes Co. Office
+                  </span>
                   <p id="nav-address-txt">
                     123 Internet Street
                     <br />
@@ -75,7 +79,6 @@ export default function Nav() {
                 <SocialsIcons />
               </div>
             </div>
-
           </div>
         </Slide>
       )}

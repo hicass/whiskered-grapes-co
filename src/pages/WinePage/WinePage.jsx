@@ -1,6 +1,7 @@
 import { Fade } from 'react-awesome-reveal';
 import Logo from '../../components/Logo/Logo';
 import WineItem from '../../components/WinePage/WineItem/WineItem';
+import VineyardCarousel from '../../components/VineyardCarousel/VinyardCarousel';
 import './WinePage.css';
 
 export default function WinePage({ wineList }) {
@@ -24,6 +25,7 @@ export default function WinePage({ wineList }) {
       </div>
 
       <div id="wine-list-container">{wineListItems}</div>
+      <VineyardCarousel />
     </section>
   );
 }

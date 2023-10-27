@@ -50,7 +50,7 @@ export default function NewReleases({ wineList }) {
           pagination={{
             clickable: true,
           }}
-          className="mySwiper test"
+          className="wineSwiper"
         >
           {wineCards}
         </Swiper>
