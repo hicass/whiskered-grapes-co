@@ -40,44 +40,38 @@ export default function Nav() {
             <Logo />
 
             <div id="nav-links">
-              <div className="nav-link-col" id="nav-link-col-l">
+              <div className="nav-link-col">
                 <Link to="/" className="nav-link" onClick={toggleNav}>
                   Home
                 </Link>
                 <Link to="/about" className="nav-link" onClick={toggleNav}>
                   Our Story
                 </Link>
-                <Link className="nav-link">Contact</Link>
-              </div>
 
-              <div className="nav-link-col" id="nav-link-col-m">
                 <Link to="/wine" className="nav-link" onClick={toggleNav}>
                   Wine
                 </Link>
                 <Link to="/tour" className="nav-link" onClick={toggleNav}>
                   Wine Tourism
                 </Link>
-                <Link className="nav-link">Vineyards</Link>
+              </div>
+            </div>
+
+            <div className="nav-link-bot">
+              <div id="nav-address">
+                <span id="nav-address-label">Whiskered Grapes Co. Office</span>
+                <p id="nav-address-txt">
+                  123 Internet Street
+                  <br />
+                  Suite 456
+                  <br />
+                  Techville, MA 01234
+                  <br />
+                  USA
+                </p>
               </div>
 
-              <div className="nav-link-col" id="nav-link-col-r">
-                <div id="nav-address">
-                  <span id="nav-address-label">
-                    Whiskered Grapes Co. Office
-                  </span>
-                  <p id="nav-address-txt">
-                    123 Internet Street
-                    <br />
-                    Suite 456
-                    <br />
-                    Techville, MA 01234
-                    <br />
-                    USA
-                  </p>
-                </div>
-
-                <SocialsIcons />
-              </div>
+              <SocialsIcons />
             </div>
           </div>
         </Slide>
