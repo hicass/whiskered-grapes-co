@@ -7,8 +7,9 @@ import 'swiper/css/pagination';
 import './VineyardCarousel.css';
 import vineyard1 from '../../assets/images/VineyardPage/vineyard-1.jpg';
 import vineyard2 from '../../assets/images/VineyardPage/vineyard-2.jpg';
-import tour2 from '../../assets/images/WineTourPage/tour-2.jpg';
-import tour3 from '../../assets/images/WineTourPage/tour-3.jpg';
+import vineyard3 from '../../assets/images/VineyardPage/vineyard-3.jpg';
+import vineyard4 from '../../assets/images/VineyardPage/vineyard-4.jpg';
+import vineyard5 from '../../assets/images/VineyardPage/vineyard-5.jpg';
 
 
 export default function VineyardCarousel() {
@@ -35,10 +36,13 @@ export default function VineyardCarousel() {
             <img className="vineyard-carousel-img" src={vineyard2} alt="Green vineyard" />
         </SwiperSlide>
         <SwiperSlide>
-            <img className="vineyard-carousel-img" src={tour2} alt="Green vineyard" />
+            <img className="vineyard-carousel-img" src={vineyard3} alt="Green vineyard" />
         </SwiperSlide>
         <SwiperSlide>
-            <img className="vineyard-carousel-img" src={tour3} alt="Green vineyard" />
+            <img className="vineyard-carousel-img" src={vineyard4} alt="Green vineyard" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <img className="vineyard-carousel-img" src={vineyard5} alt="Green vineyard" />
         </SwiperSlide>
       </Swiper>
     </section>
