@@ -58,16 +58,13 @@ export default function LandingPage({ wineList }) {
               alt="Vinyard with hills during an orange sunset"
             />
             <p id="landing-story-txt">
-              The Pepperoni family's passion for winemaking has been deeply
-              woven into the fabric of Massachusetts. At Whiskered Grapes Co,
-              our roots run strong, and we've redefined tradition. With beards
-              and oregano, along with a steadfast respect for the land, we've
-              transformed wine into a unique experience that carries the
-              Pepperoni name with pride. Our story, beginning in Italy and
-              flourishing in Massachusetts, is a celebration of heritage and
-              unexpected flavors in every bottle. Join us in raising a glass to
-              the legacy of the Pepperoni family, where tradition meets playful
-              innovation.
+              The Pepperoni family's wine mastery is Massachusetts' best
+              treasure. At Whiskered Grapes Co, we've spiced up tradition! With
+              our bearded vintners and a dash of oregano sorcery, we've turned
+              wine into a Pepperoni fiesta. From Italy to Massachusetts, our
+              wine journey is like a delectable rollercoaster. Let's raise a
+              glass to the Pepperoni clan's legendary wine legacy, where
+              old-school meets oregano-powered innovation!
             </p>
           </div>
         </div>
@@ -96,7 +93,7 @@ export default function LandingPage({ wineList }) {
                 ingredients are so local they attend family gatherings,
                 neighborhood barbecues, and even the occasional squirrel picnic.
               </li>
-              
+
               <li className="source-text">
                 <FaHeartCircleCheck className="check-mark" />
                 <span className="source-title">The Oregano Whisperer: </span>We
