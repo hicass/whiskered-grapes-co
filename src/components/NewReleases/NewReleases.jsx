@@ -38,10 +38,6 @@ export default function NewReleases({ wineList }) {
             '--swiper-navigation-color': '#483e37',
             '--swiper-pagination-color': '#483e37',
           }}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: true,
-          }}
           slidesPerView={2.5}
           spaceBetween={30}
           navigation={true}

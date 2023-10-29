@@ -16,6 +16,8 @@
   color: var(--brown);
   border: 0.5px solid var(--brown);
   padding: 2%;
+  min-height: 40vw;
+  max-height: 40vw;
 }
 
 #releases-txt {
@@ -35,7 +37,7 @@
 .wine-card-name {
   line-height: 1.2em;
   font-family: 'Peskia', sans-serif;
-  font-size: clamp(1.8rem, 2.2vw, 2.3rem);
+  font-size: clamp(1.3rem, 2.2vw, 2.3rem);
 }
 
 .wine-card-img {
