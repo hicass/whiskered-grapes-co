@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Slide } from 'react-awesome-reveal';
 import { BsArrowLeft } from 'react-icons/bs';
+import VineyardCarousel from '../../components/VineyardCarousel/VinyardCarousel';
 import sommeliersCert from '../../assets/images/WineDetailPage/sommeliers-cert.png';
 import organicCert from '../../assets/images/WineDetailPage/organic-cert.png';
 import massachusettsCert from '../../assets/images/WineDetailPage/massachusetts-cert.png';
@@ -121,6 +122,7 @@ export default function WineDetailPage() {
           <hr className="thread"/>
         </div>
       </Slide>
+      <VineyardCarousel />
     </section>
   );
 }
