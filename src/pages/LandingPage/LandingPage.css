@@ -115,10 +115,6 @@
 }
 
 @media screen and (max-width: 850px) {
-  #landing-top {
-    height: 80vw;
-    width: 100%;
-  }
 
   #landing-h1 {
     font-size: clamp(2rem, 7vw, 6.5rem);

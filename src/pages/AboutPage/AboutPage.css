@@ -21,6 +21,9 @@
     position: absolute;
     z-index: 1;
     margin-bottom: 10%;
+    font-family: 'Peskia', sans-serif;
+    font-size: clamp(4rem, 7vw, 6.5rem);
+    letter-spacing: 0.2em;
 }
 
 #scroll-wrapper-about {
@@ -166,31 +169,25 @@
     object-fit: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
 
     #about-story,
     #about-story-top,
-    #about-story-bot {
+    #about-story-bot,
+    #about-story-content {
         flex-direction: column;
         align-items: center;
     }
 
-    #about-nav {
-        width: 100%;
-        text-align: center;
-    }
-
-
-    #about-story-logo {
-        position: static;
-        margin: 5%;
-        width: 20%;
+    #about-h1 {
+        font-size: clamp(5rem, 7vw, 6.5rem);
+        margin: 3%;
     }
 
     .about-img {
-        max-width: 80%;
-        max-height: 100%;
-        margin: 2% 0;
+        width: 80vw;
+        margin: 5% 0;
+        object-fit: cover;
     }
 
     #people-img-div {
@@ -208,9 +205,36 @@
 
     #about-origins-content {
         flex-direction: column;
+        padding-right: 0;
     }
 
     .vintage-img {
         margin: 5% 0;
+        width: 80vw;
     }
+
+    .center-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    #about-origins, #places-img-div {
+        flex-direction: column;
+    }
+
+    .place-img {
+        width: 80vw;
+        margin: 5%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #about-h1 {
+        line-height: 1.2em;
+        margin: 2% 20% 0;
+        text-align: center;
+        font-size: clamp(4rem, 7vw, 6.5rem);
+    }
+
 }

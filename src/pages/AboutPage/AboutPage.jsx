@@ -73,11 +73,13 @@ export default function AboutPage({ wineList }) {
             </div>
 
             <Slide direction="right" triggerOnce="true">
-              <img
-                className="about-img"
-                src={grapes}
-                alt="Grapes being processed"
-              />
+              <div className="center-img">
+                <img
+                  className="about-img"
+                  src={grapes}
+                  alt="Grapes being processed"
+                />
+              </div>
             </Slide>
           </div>
 
@@ -92,11 +94,9 @@ export default function AboutPage({ wineList }) {
 
           <div className="about-story-txt" id="about-story-bot">
             <Slide direction="left" triggerOnce="true">
-              <img
-                className="about-img"
-                src={oregano}
-                alt="Grapes being processed"
-              />
+              <div className="center-img">
+                <img className="about-img" src={oregano} alt="Oregano" />
+              </div>
             </Slide>
 
             <Fade>
@@ -171,21 +171,27 @@ export default function AboutPage({ wineList }) {
 
         <div id="people-img-div">
           <Fade cascade direction="left" duration="1000" triggerOnce="true">
-            <img
-              className="people-img"
-              src={beardMan1}
-              alt="Young man with a beard"
-            />
-            <img
-              className="people-img-vineyard"
-              src={beardManVineyard}
-              alt="A bearded man in a vineyard"
-            />
-            <img
-              className="people-img"
-              src={beardMan2}
-              alt="Older man with a beard"
-            />
+            <div className="center-img">
+              <img
+                className="people-img"
+                src={beardMan1}
+                alt="Young man with a beard"
+              />
+            </div>
+            <div className="center-img">
+              <img
+                className="people-img-vineyard"
+                src={beardManVineyard}
+                alt="A bearded man in a vineyard"
+              />
+            </div>
+            <div className="center-img">
+              <img
+                className="people-img"
+                src={beardMan2}
+                alt="Older man with a beard"
+              />
+            </div>
           </Fade>
         </div>
       </div>
@@ -230,11 +236,7 @@ export default function AboutPage({ wineList }) {
         </div>
 
         <div id="vintage-img-div">
-          <Fade
-            cascade
-            direction="right"
-            triggerOnce="true"
-          >
+          <Fade cascade direction="right" triggerOnce="true">
             <img className="vintage-img" src={oldFarm} alt="Old Farm" />
             <img className="vintage-img" src={oldFamily} alt="Old Family" />
           </Fade>
@@ -260,13 +262,27 @@ export default function AboutPage({ wineList }) {
 
         <div id="places-img-div">
           <Fade cascade direction="right" duration="1000" triggerOnce="true">
-            <img
-              className="place-img"
-              src={vineyardHome}
-              alt="House on a Vineyard"
-            />
-            <img className="place-img" src={vineyardVines1} alt="Grape Vine" />
-            <img className="place-img" src={vineyardVines2} alt="Grape Vine" />
+            <div className="center-img">
+              <img
+                className="place-img"
+                src={vineyardHome}
+                alt="House on a Vineyard"
+              />
+            </div>
+            <div className="center-img">
+              <img
+                className="place-img"
+                src={vineyardVines1}
+                alt="Grape Vine"
+              />
+            </div>
+            <div className="center-img">
+              <img
+                className="place-img"
+                src={vineyardVines2}
+                alt="Grape Vine"
+              />
+            </div>
           </Fade>
         </div>
       </div>
