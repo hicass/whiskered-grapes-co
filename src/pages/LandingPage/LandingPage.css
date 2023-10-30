@@ -31,15 +31,15 @@
   border: 1px solid red;
 }
 
-h1 {
+#landing-h1 {
   font-family: 'Peskia', sans-serif;
   font-size: clamp(4rem, 7vw, 6.5rem);
   letter-spacing: 0.2em;
   margin: 5%;
 }
 
-h2 {
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+#landing-h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.3rem);
 }
 
 #landing-top-p {
@@ -114,9 +114,76 @@ h2 {
   width: 40vw;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 850px) {
   #landing-top {
     height: 80vw;
     width: 100%;
+  }
+
+  #landing-h1 {
+    font-size: clamp(2rem, 7vw, 6.5rem);
+    margin: 3%;
+  }
+
+  #landing-h2 {
+    font-size: clamp(1.2rem, 2.5vw, 2.3rem);
+  }
+
+  #landing-top-p {
+    font-size: clamp(1.3rem, 3vw, 2.8rem);
+    margin: 0 3%;
+  }
+
+  #landing-story-content {
+    flex-direction: column-reverse;
+  }
+
+  #landing-story-logo {
+    display: none;
+  }
+
+  #landing-story-img {
+    margin-top: 7%;
+    height: 40vw;
+  }
+
+  #landing-story-txt {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+  }
+
+  #landing-source {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #landing-source-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .source-text {
+    margin: 0 0 5%;
+  }
+
+  #source-grapes-img {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #landing-top-content {
+    margin-top: 15%;
+  }
+
+  #landing-h1 {
+    line-height: 1.2em;
+    margin: 2% 20% 0;
+    text-align: center;
+  }
+
+  #landing-top-p {
+    margin: 3% 20%;
+    text-align: center;
   }
 }

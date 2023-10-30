@@ -8,7 +8,8 @@
 }
 
 .wineSwiper {
-  width: 80vw;
+  width: 70vw;
+  height: 42vw;
   color: var(--brown);
 }
 
@@ -16,12 +17,12 @@
   color: var(--brown);
   border: 0.5px solid var(--brown);
   padding: 2%;
-  min-height: 40vw;
-  max-height: 40vw;
+  min-height: 38vw;
+  max-height: 38vw;
 }
 
 #releases-txt {
-  margin-top: 0;
+  margin: 0 0 3%;
 }
 
 .wine-card-container {
@@ -41,9 +42,53 @@
 }
 
 .wine-card-img {
-  width: 20vw;
-  height: 25vw;
+  width: 17vw;
+  height: 23vw;
   object-fit: cover;
   margin-top: 3%;
 }
 
+@media screen and (max-width: 850px) {
+  .wineSwiper {
+    width: 90vw;
+    height: 50vw;
+  }
+
+  .slide {
+    margin: 3%;
+    min-height: 45vw;
+    max-height: 45vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wineSwiper {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .slide {
+    margin: 3% 2%;
+    min-height: 85vw;
+    max-height: 85vw;
+    min-width: 50vw;
+    max-width: 50vw;
+  }
+
+  .wine-card-img {
+    margin-top: 10%;
+    width: 37vw;
+    height: 45vw;
+  }
+
+  .wine-card-container {
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .wine-card-name {
+    font-size: clamp(1.2rem, 2.2vw, 2.3rem);
+    text-align: center;
+  }
+}

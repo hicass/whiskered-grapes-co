@@ -8,6 +8,7 @@
 #description-categories {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: 5% 0;
 }
 
@@ -20,20 +21,39 @@
 }
 
 #description-title {
-    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-size: clamp(3rem, 4vw, 4rem);
 }
 
 #category-name {
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 1.6vw, 1.6rem);
     text-align: center;
 }
 
 .category-description {
-    font-size: clamp(1.3rem, 1.5vw, 1.5rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     text-align: center;
 }
 
 .description-icon {
     margin: 2rem;
     width: 50%;
+}
+
+@media screen and (max-width: 760px) {
+    #description-categories {
+        flex-direction: column;
+        margin-top: 10%;
+        align-items: center;
+    }
+
+    .category {
+        margin: 5% 2%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .category {
+        width: 65%;
+    }
 }

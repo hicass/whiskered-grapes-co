@@ -19,8 +19,8 @@ export default function LandingPage({ wineList }) {
           <Logo />
         </div>
         <div id="landing-top-content">
-          <h2>- Since 1933 -</h2>
-          <h1>Whiskered Grapes Co.</h1>
+          <h2 id="landing-h2">- Since 1933 -</h2>
+          <h1 id="landing-h1">Whiskered Grapes Co.</h1>
           <p id="landing-top-p">crafting tradition, embracing innovation</p>
         </div>
 
@@ -64,7 +64,7 @@ export default function LandingPage({ wineList }) {
 
       <div id="landing-source">
         <Fade>
-          <div>
+          <div id="landing-source-content">
             <h2 className="about-h2" id="releases-h2">
               Responsibly Sourced
             </h2>
