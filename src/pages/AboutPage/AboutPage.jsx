@@ -28,16 +28,8 @@ export default function AboutPage({ wineList }) {
         <ZoomingBackground
           imageSrc={barrelBackground}
           alt={'Large stack of barrels'}
-          originHeight={'100vh'}
-          originPosition={'absolute'}
           id="about-barrels"
         />
-
-        <div className="scroll-wrapper" id="scroll-wrapper-about">
-          <div className="scroll-wrapper-inner">
-            <div className="scroll-down"></div>
-          </div>
-        </div>
       </div>
 
       <div id="about-story">

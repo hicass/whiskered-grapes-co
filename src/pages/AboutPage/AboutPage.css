@@ -17,9 +17,10 @@
 }
 
 #about-h1 {
-    padding: 1em 1em 0;
     line-height: 1em;
-    margin-top: 15%;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 10%;
 }
 
 #scroll-wrapper-about {

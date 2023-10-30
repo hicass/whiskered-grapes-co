@@ -15,29 +15,19 @@ export default function LandingPage({ wineList }) {
   return (
     <section id="landing-page">
       <div id="landing-top">
+        <div className="page-logo">
+          <Logo />
+        </div>
         <div id="landing-top-content">
-          <div className="page-logo">
-            <Logo />
-          </div>
-
           <h2>- Since 1933 -</h2>
           <h1>Whiskered Grapes Co.</h1>
           <p id="landing-top-p">crafting tradition, embracing innovation</p>
-
-          <ZoomingBackground
-            imageSrc={landingImage}
-            alt={'Two wine bottles'}
-            originHeight={'100vh'}
-            originPosition={'absolute'}
-          />
         </div>
 
-        <div className="scroll-wrapper">
-          <div className="scroll-wrapper-inner">
-            <div className="scroll-title">Scroll</div>
-            <div className="scroll-down"></div>
-          </div>
-        </div>
+        <ZoomingBackground
+          imageSrc={landingImage}
+          alt={'Two wine bottles'}
+        />
       </div>
 
       <WineIntro />

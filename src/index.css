@@ -94,6 +94,7 @@ ul {
   position: absolute;
   top: 2%;
   left: 2%;
+  z-index: 1;
 }
 
 .brown-txt {
@@ -104,11 +105,17 @@ ul {
   font-family: 'Erode-Medium', sans-serif;
 }
 
+.top-image-container {
+  position: relative;
+  height: inherit;
+}
+
 .scroll-wrapper {
   display: table;
   width: 100%;
-  height: 100%;
-  margin-top: 10%;
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
 }
 
 .scroll-wrapper-inner {
@@ -128,7 +135,6 @@ ul {
 }
 
 .scroll-down {
-  margin-top: 5%;
   display: block;
   position: relative;
   text-align: center;

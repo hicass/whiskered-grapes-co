@@ -1,8 +1,0 @@
-#zooming-img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-}

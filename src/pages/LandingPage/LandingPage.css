@@ -8,21 +8,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   overflow-y: hidden;
   position: relative;
   overflow-x: hidden;
 }
 
 #landing-top-content {
-  align-items: flex-start;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15%;
+  margin-bottom: 10%;
   width: 100%;
+  z-index: 1;
 }
 
 #about-barrels {

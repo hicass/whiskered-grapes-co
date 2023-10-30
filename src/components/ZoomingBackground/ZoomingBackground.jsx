@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react';
 export default function ZoomingBackground({
   imageSrc,
   alt,
-  originHeight,
-  originPosition,
 }) {
   const [scrollPos, setScrollPos] = useState(0);
 
@@ -22,14 +20,20 @@ export default function ZoomingBackground({
 
   const imageStyle = {
     width: '100vw',
+    height: '100vh',
     transform: `scale(${scale})`,
     objectFit: 'cover',
-    position: 'absolute',
-    height: { originHeight },
-    zIndex: '-1',
-    top: '0',
     transition: 'transform 0.05s ease-in-out',
-    filter: 'brightness(60%)'
+    filter: 'brightness(60%)',
   };
-  return <img src={imageSrc} alt={alt} style={imageStyle} />;
+  return (
+    <div className="top-image-container">
+      <img src={imageSrc} alt={alt} style={imageStyle} />
+      <div className="scroll-wrapper">
+        <div className="scroll-wrapper-inner">
+          <div className="scroll-down"></div>
+        </div>
+      </div>
+    </div>
+  );
 }
