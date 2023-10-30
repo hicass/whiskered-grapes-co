@@ -17,8 +17,8 @@
   color: var(--brown);
   border: 0.5px solid var(--brown);
   padding: 2%;
-  min-height: 38vw;
-  max-height: 38vw;
+  min-height: 37vw;
+  max-height: 37vw;
 }
 
 #releases-txt {
@@ -38,7 +38,7 @@
 .wine-card-name {
   line-height: 1.2em;
   font-family: 'Peskia', sans-serif;
-  font-size: clamp(1.3rem, 2.2vw, 2.3rem);
+  font-size: clamp(1.2rem, 2vw, 2.3rem);
 }
 
 .wine-card-img {
@@ -49,9 +49,29 @@
 }
 
 .nr-item-description {
-  font-size: clamp(1.4rem, 1.3vw, 1.3rem);
-  margin: 5% 15% 2%;
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
+  margin: 5% 5% 2%;
   text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .slide {
+    min-height: 40vw;
+    max-height: 40vw;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .wineSwiper {
+    width: 90vw;
+    height: 50vw;
+  }
+
+  .slide {
+    margin: 3%;
+    min-height: 45vw;
+    max-height: 45vw;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -62,8 +82,22 @@
 
   .slide {
     margin: 3%;
-    min-height: 45vw;
-    max-height: 45vw;
+    min-height: 40vw;
+    max-height: 40vw;
+  }
+
+  .nr-item-description {
+    display: none;
+  }
+
+  .wine-card-name {
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+  }
+
+  .wine-card-container {
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
   }
 }
 
@@ -94,11 +128,7 @@
   }
 
   .wine-card-name {
-    font-size: clamp(1.2rem, 2.2vw, 2.3rem);
+    font-size: clamp(1rem, 2.2vw, 2.3rem);
     text-align: center;
-  }
-
-  .nr-item-description {
-    display: none;
   }
 }

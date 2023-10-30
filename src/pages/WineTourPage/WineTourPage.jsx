@@ -131,7 +131,7 @@ export default function WineTourPage({ wineList }) {
               </ul>
             </div>
 
-            <div class="tour-contact-box">
+            <div className="tour-contact-box">
               <h4 className="tour-h4">
                 Also available as a gift for your favorite extraterrestrial!
               </h4>
@@ -247,7 +247,7 @@ export default function WineTourPage({ wineList }) {
               </ul>
             </div>
 
-            <div class="tour-contact-box">
+            <div className="tour-contact-box">
               <h4 className="tour-h4">
                 Also available as a gift for your favorite extraterrestrial!
               </h4>

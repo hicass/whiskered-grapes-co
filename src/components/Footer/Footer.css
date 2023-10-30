@@ -10,7 +10,7 @@
 }
 
 #footer-top-r {
-  font-size: clamp(0rem, 1.3vw, 200rem);
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
   width: 60%;
 }
 
@@ -20,4 +20,11 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2%;
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
+}
+
+@media screen and (max-width: 530px) {
+  #footer-top-r, #footer-bottom {
+    font-size: clamp(0.7rem, 1.3vw, 1.3rem);
+  }
 }
