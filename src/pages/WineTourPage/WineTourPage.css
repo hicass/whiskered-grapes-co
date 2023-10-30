@@ -35,29 +35,42 @@
 
 #tour-classic-content-top-l>*,
 #tour-classic-content-bot>* {
-    color: var(--brown-2)
+    color: var(--brown-2);
+    line-height: 1.2em;
 }
 
 .tour-h3 {
     font-family: 'Erode-Light', sans-serif;
-    margin-top: 10%;
+    margin: 10% 0 5%;
     color: var(--brown-2);
+    line-height: 1.2em;
 }
 
 #tour-h3-white {
     color: var(--beige);
+    line-height: 1.2em;
 }
 
 .tour-h4 {
     font-family: 'Erode-Medium', sans-serif;
     font-size: clamp(1.3rem, 1.5vw, 1.5rem);
     color: var(--brown-2);
+    line-height: 1.2em;
+}
+
+.wine-tour-img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .tour-img {
     height: 70vw;
     width: 45vw;
     object-fit: cover;
+    padding: 5%;
+    display: flex;
+    align-items: center;
 }
 
 #tour-classic-content-bot {
@@ -95,4 +108,46 @@
     font-size: clamp(1.3rem, 1.5vw, 1.5rem);
     margin: 3% 5%;
     line-height: 1.3em;
+}
+
+@media screen and (max-width: 1000px) {
+    #tour-classic-content-top {
+        flex-direction: column-reverse;
+    }
+
+    #tour-pairing-content-top {
+        flex-direction: column-reverse;
+    }
+
+    .center-tour-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    #tour-pairing-content-top-l {
+        margin-left: 0;
+    }
+
+    .tour-img {
+        height: 50vw;
+        width: 90vw;
+        padding: 0 0 5%;
+        object-position: 50% 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #tour-classic-content-bot {
+        flex-direction: column;
+    }
+
+    #tour-bottom-img {
+        height: 80vw;
+        width: 90vw;
+        object-position: 90%;
+    }
+
+    #tour-bottom-txt {
+        margin: 5% 0;
+    }
 }

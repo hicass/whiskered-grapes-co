@@ -28,7 +28,7 @@ export default function App() {
         <Route path="/" element={<LandingPage wineList={wineList} />} />
         <Route path="/about" element={<AboutPage wineList={wineList} />} />
         <Route path="/wine" element={<WinePage wineList={wineList} />} />
-        <Route path='/wine/:wineId' element={<WineDetailPage />} />
+        <Route path='/wine/:wineId' elementw={<WineDetailPage />} />
         <Route path='/tour' element={<WineTourPage wineList={wineList} />} />
       </Routes>
       <Footer />

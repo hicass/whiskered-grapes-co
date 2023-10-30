@@ -15,7 +15,7 @@ export default function NewReleases({ wineList }) {
       <div className="wine-card-container">
         <h4 className="wine-card-name">{wine.name}</h4>
         <img src={wine.image} className="wine-card-img" alt="Wine in glass" />
-        <p className="wine-item-description">{wine.taste}</p>
+        <p className="nr-item-description">{wine.taste}</p>
         <Link to={`/wine/${wine._id}`} state={{ wineId: wine._id }}>
           <AccentLink linkText={'Learn More'} />
         </Link>

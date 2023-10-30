@@ -83,13 +83,15 @@ export default function WineTourPage({ wineList }) {
                 About 1 hour and a half (Earth hours, that is).
               </p>
             </div>
-            <div>
+            <div className="wine-tour-img-div">
               <Slide direction="right" triggerOnce="true">
+                <div className="center-tour-img">
                 <img
                   className="tour-img"
                   src={barrelImage}
                   alt="Brown wine barrels stacked"
                 />
+                </div>
               </Slide>
             </div>
           </div>
@@ -198,7 +200,8 @@ export default function WineTourPage({ wineList }) {
                 like a lot less).
               </p>
             </div>
-            <div>
+
+            <div className="wine-tour-img-div">
               <Slide direction="left" triggerOnce="true">
                 <img
                   className="tour-img"

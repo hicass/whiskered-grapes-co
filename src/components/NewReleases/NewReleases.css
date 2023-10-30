@@ -48,6 +48,12 @@
   margin-top: 3%;
 }
 
+.nr-item-description {
+  font-size: clamp(1.4rem, 1.3vw, 1.3rem);
+  margin: 5% 15% 2%;
+  text-align: center;
+}
+
 @media screen and (max-width: 850px) {
   .wineSwiper {
     width: 90vw;
@@ -90,5 +96,9 @@
   .wine-card-name {
     font-size: clamp(1.2rem, 2.2vw, 2.3rem);
     text-align: center;
+  }
+
+  .nr-item-description {
+    display: none;
   }
 }
