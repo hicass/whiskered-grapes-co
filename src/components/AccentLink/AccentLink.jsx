@@ -2,8 +2,8 @@ import './AccentLink.css';
 
 export default function AccentLink({ linkText }) {
     return (
-        <button class="cta">
-        <span class="hover-underline-animation">{linkText}</span>
+        <button className="cta">
+        <span className="hover-underline-animation">{linkText}</span>
         <svg
           viewBox="0 0 46 16"
           height="8"

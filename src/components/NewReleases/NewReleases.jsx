@@ -11,7 +11,7 @@ export default function NewReleases({ wineList }) {
   const selectedWines = wineList.slice(0, 4);
 
   const wineCards = selectedWines.map((wine) => (
-    <SwiperSlide className="slide">
+    <SwiperSlide className="slide" key={wine._id}>
       <div className="wine-card-container">
         <h4 className="wine-card-name">{wine.name}</h4>
         <img src={wine.image} className="wine-card-img" alt="Wine in glass" />
