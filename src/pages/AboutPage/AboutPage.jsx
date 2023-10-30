@@ -241,9 +241,7 @@ export default function AboutPage({ wineList }) {
           <Fade
             cascade
             direction="right"
-            duration="700"
             triggerOnce="true"
-            fraction="1"
           >
             <img className="vintage-img" src={oldFarm} alt="Old Farm" />
             <img className="vintage-img" src={oldFamily} alt="Old Family" />
