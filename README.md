@@ -2,11 +2,11 @@
     <Img alt='Logo' src='./public/favicon.ico' width='120px'/>
 </div>
 <h1 align='center'>
-  Whiskered Grapes Co.
+  <a href='https://whiskered-grapes-co-9786d5309a36.herokuapp.com/' target='_blank'>Whiskered Grapes Co.</a>
 </h1>
 
 <p align='center'>
-  <a href='https://www.tagoperations.com/' target='_blank'>This website</a> serves as a virtual brochure for an imaginative wine company, offering a whimsical glimpse into a world where beards, oregano, and creativity converge in every bottle. I solely designed and developed this using <a href='https://react.dev/' target='_blank'>React.</a> See demo below.
+  This website serves as a virtual brochure for an imaginative wine company, offering a whimsical glimpse into a world where beards, oregano, and creativity converge in every bottle. I solely designed and developed this using <a href='https://react.dev/' target='_blank'>React.</a> See demo below.
 </p>
 
 <p align='center'>
